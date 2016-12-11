@@ -8,6 +8,17 @@ public class Main {
     private static Logger log = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) throws myException, IOException, ClassNotFoundException {
+        vector vA = new vector(3);
+        vA.fillByRandomValues();
+
+        vector vB = new vector(3);
+        vB.fillByRandomValues();
+
+        vector vC;
+        vC = vA.summation(vB);
+        vC.print();
+
+
         matrix A = new matrix(3, 3);
         A.fillByRandomValues();
 

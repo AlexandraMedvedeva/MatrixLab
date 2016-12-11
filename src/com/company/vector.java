@@ -10,4 +10,13 @@ public class vector extends matrix {
         this.M = 1;
         data = new int[N][M];
     }
+
+    vector summation(vector B) {
+        vector result = new vector(B.N);
+
+        for(int i = 0; i < result.N; i++){
+            result.data[i][0] = B.data[i][0] + this.data[i][0];
+        }
+        return result;
+    }
 }
